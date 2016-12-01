@@ -11,3 +11,6 @@ section.job{
 ul.accomplishments{
 	font-size: .8em;
 }
+section.job>ul.accomplishments{
+	color: rgb(255,0,0);
+}
