@@ -10,14 +10,16 @@ margin-top: 10px;
 }
 
 main { 
-  width:756px;
-
+  width:80%;
+  min-width:400px;
 }
 
 #external-links{
-width: 200px;
-display:block;
+width: 20%;
+min-width: 200px;
+display:inline-block;
 vertical-align: top;
+
 }
 
 #external-links ul {
@@ -45,6 +47,6 @@ text-align: right;
 }
 
 body{
-  display: flex;
-  width: 960px;
+  display: inline-flex;
+  max-width: 960px;
 }
