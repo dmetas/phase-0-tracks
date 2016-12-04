@@ -28,7 +28,23 @@ padding-left: 0px;
 
 
 }
+@media screen and (min-width: 1000px){
+  main{
+    font-style: italic;
+  }
+}
 
+@media screen and (max-width:500px){
+  h1{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like,
 but it's optional! */
@@ -48,5 +64,6 @@ text-align: right;
 
 body{
   display: inline-flex;
+  margin:auto;
   max-width: 960px;
 }
