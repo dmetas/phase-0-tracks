@@ -28,9 +28,9 @@ else
   age = age.to_f
 end
 
-puts"Your Hamster information:"
+puts"\nYour Hamster information:"
 puts"Your Hamsters name: #{hamsterName}"
 puts"Your Hamsters volume: #{volume}"
 puts"Your Hamsters fur color: #{furColor}"
-puts"Your hamasters a good candidate: #{candidate}"
+puts"Your hamsters a good candidate: #{candidate}"
 puts"Your Hamsters age is: #{age}"
