@@ -64,6 +64,5 @@ text-align: right;
 
 body{
   display: inline-flex;
-  margin:auto;
   max-width: 960px;
 }
