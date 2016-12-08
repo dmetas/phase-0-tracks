@@ -1,14 +1,26 @@
 puts"Enter Hamster name."
 hamsterName = gets.chomp
 puts"Hamster volume level from 1-10"
-volume = gets.chomp
+volume = gets.chomp.to_i
 puts"what is the fur color?"
 furColor = gets.chomp
-puts"Hamster is a good candidate for adoption"
-candidate = gets.chomp
+candidate = nil
+until candidate == "y"||candidate == "Y"||candidate == "n"|| candidate == "N" || candidate == true || candidate == false
+	puts"Hamster is a good candidate for adoption Y or N"
+	candidate = gets.chomp
+	if candidate == "y"||candidate == "Y"
+		candidate = true
+	elsif candidate == "n"||candidate == "N"
+		candidate = false
+	else
+		puts"please enter Y or N"
+	end
+end	
 puts"estimated age"
-age = gets.chomp.to_f
-if age == 0.0
+age = gets.chomp
+if age == ""
 	age = nil
+else
+	age = age.to_f
 end
-puts(hamsterName, volume, furColor, candidate,age)
+print(hamsterName, volume, furColor, candidate,age)
