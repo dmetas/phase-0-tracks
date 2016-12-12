@@ -1,0 +1,20 @@
+Greet the human who enters the elevator
+wait for the human to completely enter the elevator
+Ask the Human which floor they want to go to
+press the number of the floor that the human asks to be taken to.
+Wait for the elevator to reach the floor
+Once the floor has been reached the floor state that you have reached the floor that was pushed. 
+once the doors open say goodbye to the human
+
+
+Turn on the water
+check the water every 10 seconds once it has reached a pleasant tempature step into the shower
+put shampoo in hand
+rub shampoo into hair let sit for 2 mins. 
+rinse hair in water for 1 min. 
+grab soap and washcloth
+lather soap in washcloth
+use washcloth on body then rense off.
+Get out of shower
+Grab towel
+use towel to dry off until body is no longer wet.
