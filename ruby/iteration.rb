@@ -42,7 +42,7 @@ end
 
 #iteration number 1
 numbers = [1,2,3,3,3,4,5,]
-numbers.delete 3
+numbers.delete (3)
 
 fruits_price2 = {
   :apple => 3,
@@ -75,8 +75,22 @@ fruits_price3 = {
 fruits_price3.reject!{|k,v| v==2}
 
 #iteration number 4
+number_list3 = [1,2,3,4,5,6,7,8,9,10,0,1,2,3]
+number_list3.drop_while {|x| x<4}
 
+fruits_price4 = {
+  "apple" => 3,
+  "banana" => 3,
+  "pear" => 7,
+  "peach" => 4 
+}
 
+keys = fruits_price4.keys
 
+keys = keys.drop_while { |key| fruits_price4[key] == 3} 
 
+fruit_price5 = {}
 
+keys.each do |key| 
+  fruit_price5[key] = fruits_price4[key]
+end 
