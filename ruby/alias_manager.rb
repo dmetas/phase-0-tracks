@@ -23,8 +23,17 @@ def name_changer (name)
       new_string += consonants[new_index]
     end
   end
-  #split name 
+  #split name reverse the order of names capaitalize both names then combine
   return new_string.split(' ').map!{|name| name.capitalize}.reverse.join(' ')
 end
 
-name_changer("Dylan Metas")
+
+name = ""
+until name == "quit"
+	puts "enter the name you would like to change or enter quit to stop"
+	if name == "quit"
+		break
+	else
+		puts name_changer(name)
+	end
+end
