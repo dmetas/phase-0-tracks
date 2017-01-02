@@ -14,16 +14,43 @@ class Santa
 		puts "that was a good #{cookie_type}"
 	end
 
+	def celebrate_birthday
+		@age += 1
+	end
 
+	def get_mad_at (reindeer_name)
+		@reindeer_ranking.delete_if{|reindeer| reindeer == reindeer_name}
+		@reindeer_ranking << reindeer_name
+		p @reindeer_ranking
+	end
+#getter methods
+	def age
+		@age
+	end
+
+	def ethnicity
+		@ethnicity
+	end
+
+#setter methods 
+	def gender= (new_gender)
+		@gender = new_gender
+	end
 end
+
 santas = []
 genders = ["agender", "female", "bigender", "male", "gender fluid","trans gender", "undecided", "unknown", "n/a"]
-example_ethnicities = ["black", "Latino", "White", "Japanese-African", "prefer not to say", "Mystical Creature (Unicorn)", "N/A"]
-example_genders.length.times do |i|
-	santas << Santa.new(example_genders[i], example_ethnicities[i])
+ethnicities = ["black", "Latino", "White", "Japanese-African", "prefer not to say", "Mystical Creature (Unicorn)", "N/A"]
+genders.length.times do |i|
+	santas << Santa.new(genders[i], ethnicities[i])
 end
+
 clause = Santa.new("Male", "Japanese")
 clause.speak
 clause.eat_milk_and_cookies("snickerdoodle")
+puts clause.age
+clause.celebrate_birthday
+puts clause.ethnicity
+puts clause.age
 
 p santas
