@@ -1,4 +1,8 @@
 class Santa
+	
+	attr_reader :age, :ethnicity
+	attr_accessor :gender
+
 	def initialize (gender, ethnicity,age = 0)
 		@gender = gender
 		@ethnicity = ethnicity
@@ -23,19 +27,6 @@ class Santa
 		@reindeer_ranking << reindeer_name
 		p @reindeer_ranking
 	end
-#getter methods
-	def age
-		@age
-	end
-
-	def ethnicity
-		@ethnicity
-	end
-
-#setter methods 
-	def gender= (new_gender)
-		@gender = new_gender
-	end
 end
 
 santas = []
@@ -44,6 +35,7 @@ ethnicities = ["black", "Latino", "White", "Japanese-African", "prefer not to sa
 genders.length.times do |i|
 	santas << Santa.new(genders[i], ethnicities[i])
 end
+p santas
 
 clause = Santa.new("Male", "Japanese")
 clause.speak
@@ -52,5 +44,6 @@ puts clause.age
 clause.celebrate_birthday
 puts clause.ethnicity
 puts clause.age
+clause.gender = "female"
 
-p santas
+puts "clause gender: #{clause.gender} age: #{clause.age}"
