@@ -32,9 +32,11 @@ end
 santas = []
 genders = ["agender", "female", "bigender", "male", "gender fluid","trans gender", "undecided", "unknown", "n/a"]
 ethnicities = ["black", "Latino", "White", "Japanese-African", "prefer not to say", "Mystical Creature (Unicorn)", "N/A"]
-genders.length.times do |i|
-	santas << Santa.new(genders[i], ethnicities[i])
+age = (0..140).to_a
+10000.times do
+	santas << Santa.new(genders.sample, ethnicities.sample, age.sample)
 end
+
 p santas
 
 clause = Santa.new("Male", "Japanese")
