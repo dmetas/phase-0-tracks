@@ -49,7 +49,7 @@ class Game_Rules
 
 end
 
-=begin
+
 #user Interface
 game = Game_Rules.new
 puts "player one please enter your word"
@@ -70,4 +70,4 @@ puts "please enter the letter you would like to guess"
     break
   end
 end
-=end
+
