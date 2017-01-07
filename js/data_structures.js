@@ -9,3 +9,20 @@ for (var i = 0; i < horse_names.length; i ++) {
 	 horses[horse_names[i]] = horse_color[i];
 }
 console.log(horses)
+
+function Car(model, year, color) {
+	console.log("our new car", this);
+	 this.model = model;
+	 this.year = year;
+	 this.color = color;
+	 this.honk = function() {console.log("Making noise!"); };
+}
+
+console.log("Lets build a new car ...");
+var anothercar = new Car("Chevy", 2013, "White");
+console.log(anothercar);
+anothercar.honk();
+
+var yetAnotherCar = new Car("Tesla", 2016, "Red");
+console.log(yetAnotherCar);
+yetAnotherCar.honk();
