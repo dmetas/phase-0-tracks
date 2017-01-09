@@ -14,5 +14,23 @@ function longest_string(array){
 	return current_longest;
 }
 
+function value_check (obj1, obj2){
+	for (var key in obj1) {
+		if (obj1[key] == obj2[key]) {
+			return true;
+		}
+	}
+	return false;
+}
+
+
+//driver code
 var names = ["David", "Kat", "Bob"];
 console.log(longest_string(names));
+
+var obj1 = {name: "Steven", age: 54};
+var obj2 = {name: "Tamir", age: 54};
+console.log(value_check(obj1, obj2));
+var steven = {name: "Steven", age: 54};
+var tamir = {name: "Tamir", age: 5};
+console.log(value_check(steven, tamir));
